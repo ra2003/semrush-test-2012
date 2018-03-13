@@ -17,6 +17,4 @@ def tests():
 
 
 def deploy():
-    if not exists(REMOTE_PATH):
-        run('mkdir -p %s' % REMOTE_PATH)
     put(LOCAL_PATH, REMOTE_PATH)
